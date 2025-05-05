@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 @RequestMapping("/api/notes")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class NoteController {
 
     private final Map<Long, Note> notes = new HashMap<>();
